@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Media</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        iframe, video, audio {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px 0;
+        }
+        svg {
+            margin: 10px auto;
+            width: 100%;
+            max-width: 600px;
+            height: 50px;
+        }
+        footer {
+            margin-top: 20px;
+        }
+        footer nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        footer nav ul li a {
+            text-decoration: none;
+            color: blue;
+        }
+        footer nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video and Audio Media</h1>
+
+    <!-- Media Container -->
+    <div class="media-container">
+        <!-- Embedded YouTube Video -->
+        <iframe src="https://www.youtube.com/embed/JdVLnLKC-pk?si=P6FpnFo03baNjdxO" 
+                title="YouTube video player"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <text x="10" y="25" fill="blue" font-size="16" font-weight="bold">
+                Grand Canyon University Doctrinal Statement
+            </text>
+        </svg>
+
+        <!-- Local Video -->
+        <video controls>
+            <source src="media/testvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <text x="10" y="25" fill="darkgreen" font-size="16" font-weight="bold">
+                Student Support Video Clip
+            </text>
+        </svg>
+
+        <!-- Local Audio -->
+        <audio controls>
+            <source src="media/testsound.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <svg xmlns="http://www.w3.org/2000/svg">
+            <text x="10" y="25" fill="orange" font-size="16" font-weight="bold">
+                Student Support Audio Clip
+            </text>
+        </svg>
+    </div>
+
+    <!-- Footer with Navigation Links -->
+    <footer>
+        <hr>
+        <nav>
+            <ul>
+                <li><a href="index.html">Back to Home</a></li>
+                <li><a href="tando.html">Course Assignment Matrix</a></li>
+            </ul>
+        </nav>
+    </footer> 
+</body>
+</html>
