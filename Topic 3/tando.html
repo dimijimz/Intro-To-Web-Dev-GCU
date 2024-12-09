@@ -4,51 +4,61 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Course Assignment Matrix</title>
+    <link rel="stylesheet" type="text/css" href="../css/mysite.css">
     <style>
-        body {
-            font-family: Arial, sans-serif;
-            text-align: center;
-            margin: 20px;
-        }
-        table {
-            width: 50%;
-            border-collapse: collapse;
-            margin: 20px auto;
-        }
-        th, td {
-            border: 1px solid black;
-            padding: 10px;
-            text-align: center;
-        }
-        th {
-            background-color: #f4f4f4;
-        }
-    </style>
+    #course-matrix-table {
+        width: 80%;
+        margin: 20px auto;
+        border-collapse: collapse;
+        font-size: 16px;
+    }
+    #course-matrix-table th {
+        background-color: #f0f8ff;
+        color: #333;
+        padding: 12px;
+    }
+    #course-matrix-table td {
+        padding: 10px;
+        border: 1px solid #ddd;
+    }
+    #course-matrix-table tbody tr:nth-child(odd) {
+        background-color: #f9f9f9;
+    }
+    #course-matrix-table tbody tr:nth-child(even) {
+        background-color: #ffffff;
+    }
+</style>
+
 </head>
 <body>
     <h1>Course Assignment Matrix</h1>
-    <table>
-        <tr>
-            <th>Assignment</th>
-            <th>Description</th>
-            <th>Due Date</th>
-        </tr>
-        <tr>
-            <td>Assignment 1</td>
-            <td>Build a basic HTML page</td>
-            <td>11/15/2024</td>
-        </tr>
-        <tr>
-            <td>Assignment 2</td>
-            <td>Create a multi-page website</td>
-            <td>11/22/2024</td>
-        </tr>
-        <tr>
-            <td>Final Project</td>
-            <td>Develop a functional website</td>
-            <td>12/10/2024</td>
-        </tr>
+    <table id="course-matrix-table">
+        <thead>
+            <tr>
+                <th>Assignment</th>
+                <th>Description</th>
+                <th>Due Date</th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td>Assignment 1</td>
+                <td>Build a basic HTML page</td>
+                <td>11/15/2024</td>
+            </tr>
+            <tr>
+                <td>Assignment 2</td>
+                <td>Create a multi-page website</td>
+                <td>11/22/2024</td>
+            </tr>
+            <tr>
+                <td>Final Project</td>
+                <td>Develop a functional website</td>
+                <td>12/10/2024</td>
+            </tr>
+        </tbody>
     </table>
+    
     <!-- footer / navigation links -->
      <hr>
    <footer>

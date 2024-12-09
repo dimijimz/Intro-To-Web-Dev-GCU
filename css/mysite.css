@@ -1,0 +1,120 @@
+/* ------------------------------
+   Global Styles
+------------------------------ */
+body {
+        margin-top: 20px;
+        margin-left: 20px;
+        background: rgb(231, 229, 229);
+    }
+    
+    /* ------------------------------
+       Typography
+    ------------------------------ */
+    h1 {
+        color: #000000;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 32px;
+        margin: 0 0 16px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    h2 {
+        color: #4f2fb6;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 28px;
+        margin: 0 0 8px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    h3, h4 {
+        color: #000000;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 8px;
+        animation: fadeIn 1.5s ease-in-out;
+    }
+    
+    p {
+        font-size: 18px;
+        margin: 16px 0 24px;
+    }
+    
+    li {
+        color: #000000;
+        font-family: Arial;
+        font-weight: bold;
+        font-size: 16px;
+        margin: 0 0 16px;
+    }
+    
+    /* ------------------------------
+       Links
+    ------------------------------ */
+    a {
+        color: rgb(221, 94, 20);
+        background: rgb(231, 229, 229);
+        text-transform: uppercase;
+        text-align: center;
+        text-decoration: none;
+        transition: color 0.3s ease, background-color 0.3s ease;
+    }
+    
+    a:hover {
+        color: white;
+        background: rgb(221, 94, 20);
+    }
+    
+    /* ------------------------------
+       Animations
+    ------------------------------ */
+    @keyframes fadeIn {
+        from {
+            opacity: 0;
+        }
+        to {
+            opacity: 1;
+        }
+    }
+    
+    /* ------------------------------
+       Images
+    ------------------------------ */
+    img {
+        width: 200px;
+        height: auto;
+        margin-right: 15px;
+        float: left;
+        transition: transform 0.3s ease-in-out;
+    }
+    
+    img:hover {
+        transform: scale(1.1);
+    }
+    
+    .rounded-corners {
+        border-radius: 15px;
+    }
+    
+    /* ------------------------------
+       Footer
+    ------------------------------ */
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-top: 1px solid #ccc;
+    }
+    
+    /* ------------------------------
+       Alignment Fix on Hobbies Page
+    ------------------------------ */
+    
+    .hobby {
+        clear: both;
+        margin-bottom: 20px;
+        overflow: auto; /* Ensures proper alignment of floated content */
+    }
+    

@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Video and Audio Media</title>
+    <link rel="stylesheet" type="text/css" href="../css/mysite.css">
     <style>
         body {
             font-family: Arial, sans-serif;
@@ -28,11 +29,14 @@
             max-width: 600px;
             margin: 10px 0;
         }
-        svg {
-            margin: 10px auto;
-            width: 100%;
-            max-width: 600px;
-            height: 50px;
+        .blinker {
+            animation: blinker 1s linear infinite;
+            color: red;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
         }
         footer {
             margin-top: 20px;
@@ -65,33 +69,21 @@
                 allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                 allowfullscreen>
         </iframe>
-        <svg xmlns="http://www.w3.org/2000/svg">
-            <text x="10" y="25" fill="blue" font-size="16" font-weight="bold">
-                Grand Canyon University Doctrinal Statement
-            </text>
-        </svg>
+        <h4 class="blinker">Grand Canyon University Doctrinal Statement</h4>
 
         <!-- Local Video -->
         <video controls>
             <source src="media/testvid.mp4" type="video/mp4">
             Your browser does not support the video tag.
         </video>
-        <svg xmlns="http://www.w3.org/2000/svg">
-            <text x="10" y="25" fill="darkgreen" font-size="16" font-weight="bold">
-                Student Support Video Clip
-            </text>
-        </svg>
+        <h4 class="blinker">Student Support Video Clip</h4>
 
         <!-- Local Audio -->
         <audio controls>
             <source src="media/testsound.mp3" type="audio/mp3">
             Your browser does not support the audio tag.
         </audio>
-        <svg xmlns="http://www.w3.org/2000/svg">
-            <text x="10" y="25" fill="orange" font-size="16" font-weight="bold">
-                Student Support Audio Clip
-            </text>
-        </svg>
+        <h4 class="blinker">Student Support Audio Clip</h4>
     </div>
 
     <!-- Footer with Navigation Links -->
