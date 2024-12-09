@@ -111,10 +111,30 @@ body {
     /* ------------------------------
        Alignment Fix on Hobbies Page
     ------------------------------ */
-    
+
     .hobby {
         clear: both;
         margin-bottom: 20px;
         overflow: auto; /* Ensures proper alignment of floated content */
     }
     
+
+    nav ul {
+        list-style-type: none;
+        padding: 0;
+        margin: 0;
+        display: flex;
+        justify-content: center;
+        gap: 20px;
+    }
+    nav ul li {
+        display: inline;
+    }
+    
+    
+    img {
+    border-radius: 15px;
+    width: 300px;
+    display: block;
+    margin: 20px auto;
+}
