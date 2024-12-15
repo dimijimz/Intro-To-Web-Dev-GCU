@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>JavaScript Playground</title>
+    <script>
+        function playjs() {
+            // VARIABLES AND ASSIGNMENTS
+            var age = 60;            // Declare a variable
+            let name = "Mark";       // Declare a variable with let
+            console.log("My name is " + name);
+            console.log("My age is " + age);
+
+            // MATH OPERATORS AND COMPARISON OPERATORS
+            var number1 = 10;
+            var number2 = 5;
+            var result;
+
+            result = number1 + number2;  // Addition
+            console.log("Addition result is " + result);
+
+            result = number1 - number2;  // Subtraction
+            console.log("Subtraction result is " + result);
+
+            result = number1 * number2;  // Multiplication
+            console.log("Multiplication result is " + result);
+
+            result = number1 / number2;  // Division
+            console.log("Division result is " + result);
+
+            ++number1;  // Increment
+            console.log("Increment result is " + number1);
+
+            --number1;  // Decrement
+            console.log("Decrement result is " + number1);
+
+            result = number1 ** number2; // Exponentiation
+            console.log("Exponentiation result is " + result);
+
+            // Comparison Operators
+            console.log("Equality for 10 is " + (number1 == 10));
+            console.log("Greater than for 2 numbers " + (number1 > number2));
+            console.log("Less than for 2 numbers " + (number1 < number2));
+
+            // STRINGS
+            let string1 = 'Single Quotes';
+            let string2 = "Double Quotes";
+            console.log("String with single quotes " + string1);
+            console.log("String with double quotes " + string2);
+
+            // String Methods
+            let string3 = "Grand Canyon University";
+            console.log("String length is " + string3.length);
+            console.log("Upper case: " + string3.toUpperCase());
+            console.log("Search for 'Canyon': " + string3.indexOf('Canyon'));
+
+            // NUMBERS
+            let numberStr = "11";
+            let numberNum = 1;
+            console.log("Convert to number: " + Number(numberStr));
+            console.log("Convert number to string: " + numberNum.toString());
+            console.log("Random number: " + Math.random());
+
+            // ARRAYS
+            let shapes = ["Triangle", "Circle", "Square"];
+            shapes.sort();
+            console.log("Sorted array: " + shapes);
+            shapes.push("Rectangle");
+            console.log("After push: " + shapes);
+
+            shapes.forEach((shape, index) => {
+            console.log("Shape " + index + ": " + shape);
+        });
+            // DATES
+            let now = new Date();
+            console.log("Current date is " + now);
+
+            let birthday = new Date(1996, 9, 17);
+            console.log("Birthday: " + birthday);
+
+            // FUNCTIONS
+            function add(a, b) {
+                 return a + b;
+}
+
+            function multiply(a, b) {
+                return a * b;
+}
+
+            console.log("Add function result: " + add(10, 5));
+            console.log("Multiply function result: " + multiply(10, 5));
+
+        }
+    </script>
+</head>
+<body onload="playjs()">
+    <h1>JavaScript Playground</h1>
+    <p>Open the console to see the output</p>
+</body>
+</html>

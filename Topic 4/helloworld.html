@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Hello World Example</title>
+    <script>
+        /* 
+         * Hello World JavaScript script that displays an alert window,
+         * display HTML in a div tag,
+         * and logs a message to the debug console
+         */
+        function sayHello() {
+            // Use Single Line Comments for code statements
+            alert("Hello world!");
+            document.getElementById('hello-text').innerHTML = "Hello world!";
+            console.log("Hello world!");  // Changed back to log from log2
+        }
+    </script>
+</head>
+<body onload="sayHello()">
+    <!-- Display text before we start running JavaScript -->
+    <p>Before running JavaScript</p>
+
+    <!-- A Div tag so we display some text using JavaScript -->
+    <div id="hello-text">
+        This is the default text
+    </div>
+
+    <!-- Display text after we are done running JavaScript -->
+    <p>After JavaScript</p>
+</body>
+</html>
