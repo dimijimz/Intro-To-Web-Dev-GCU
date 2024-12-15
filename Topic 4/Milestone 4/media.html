@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Video and Audio Media</title>
+    <link rel="stylesheet" type="text/css" href="../../css/mysite.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            text-align: center;
+        }
+        h1 {
+            margin-top: 20px;
+            font-size: 2em;
+        }
+        .media-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 20px;
+            max-width: 800px;
+            margin: 20px auto;
+        }
+        iframe, video, audio {
+            width: 100%;
+            max-width: 600px;
+            margin: 10px 0;
+        }
+        .blinker {
+            animation: blinker 1s linear infinite;
+            color: red;
+        }
+        @keyframes blinker {
+            50% {
+                opacity: 0;
+            }
+        }
+        footer {
+            margin-top: 20px;
+        }
+        footer nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        footer nav ul li {
+            display: inline;
+            margin: 0 15px;
+        }
+        footer nav ul li a {
+            text-decoration: none;
+            color: blue;
+        }
+        footer nav ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+    <h1>Video and Audio Media</h1>
+    <hr>
+
+    <!-- Media Container -->
+    <div class="media-container">
+        <!-- Embedded YouTube Video -->
+        <iframe src="https://www.youtube.com/embed/JdVLnLKC-pk?si=P6FpnFo03baNjdxO" 
+                title="YouTube video player"
+                class = "rounded-image"
+                width = "600"
+                height="315"
+                allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+                allowfullscreen>
+        </iframe>
+        <h4 class="blinker">Grand Canyon University Doctrinal Statement</h4>
+
+        <!-- Local Video -->
+        <video controls>
+            <source src="../media/testvid.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        <h4 class="blinker">Student Support Video Clip</h4>
+
+        <!-- Local Audio -->
+        <audio controls>
+            <source src="../media/testsound.mp3" type="audio/mp3">
+            Your browser does not support the audio tag.
+        </audio>
+        <h4 class="blinker">Student Support Audio Clip</h4>
+    </div>
+
+    <!-- Footer with Navigation Links -->
+    <footer>
+        <nav>
+            <ul class="footer-nav">
+                <li><a href="index.html">Home</a></li>
+                <li><a href="events.html">Important Events</a></li>
+                <li><a href="hobbies.html">My Hobbies</a></li>
+                <li><a href="tando.html">Course Assignment Matrix</a></li>
+            </ul>
+        </nav>
+    </footer> 
+</body>
+</html>

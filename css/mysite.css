@@ -1,15 +1,28 @@
 /* ------------------------------
    Global Styles
 ------------------------------ */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
+
 body {
         margin-top: 20px;
         margin-left: 20px;
         background: rgb(231, 229, 229);
+        font-family: 'Poppins', Arial, sans-serif; /* Updated font */
+        line-height: 1.6; /* Optional for better text spacing */
     }
     
     /* ------------------------------
        Typography
     ------------------------------ */
+    .center-text {
+        display: flex;
+        justify-content: center; /* Horizontally center */
+        align-items: center; /* Vertically center */
+        text-align: center; /* Aligns text content */
+        padding: 10px;
+    }
+    
+    
     h1 {
         color: #000000;
         font-family: Arial;
@@ -82,31 +95,25 @@ body {
     /* ------------------------------
        Images
     ------------------------------ */
-    img {
-        width: 200px;
-        height: auto;
-        margin-right: 15px;
-        float: left;
-        transition: transform 0.3s ease-in-out;
-    }
-    
-    img:hover {
-        transform: scale(1.1);
-    }
     
     .rounded-corners {
         border-radius: 15px;
     }
+
+    /* Centered Rounded Image */
+    .rounded-image {
+        border-radius: 15px;
+        width: 600px;
+        display: flex;
+        margin: 0 auto 20px;
+        transition: transform 0.3s ease;
+}
+
+    .rounded-image:hover {
+        transform: scale(1.05);
+}
+
     
-    /* ------------------------------
-       Footer
-    ------------------------------ */
-    footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #f4f4f4;
-        border-top: 1px solid #ccc;
-    }
     
     /* ------------------------------
        Alignment Fix on Hobbies Page
@@ -115,7 +122,10 @@ body {
     .hobby {
         clear: both;
         margin-bottom: 20px;
-        overflow: auto; /* Ensures proper alignment of floated content */
+        overflow: auto;
+        gap: 10px; /* Add spacing between text and image */
+        display: flex; /* Use Flexbox for content alignment */
+        align-items: center;
     }
     
 
@@ -137,4 +147,72 @@ body {
     width: 300px;
     display: block;
     margin: 20px auto;
+}
+
+/* ------------------------------
+   Table Styling
+------------------------------ */
+table {
+    width: 80%;
+    margin: 20px auto;
+    border-collapse: collapse;
+}
+
+table thead {
+    background-color: #ffffff;
+}
+
+th, td {
+    border: 1px solid #000000;
+    padding: 10px;
+    text-align: center;
+}
+
+caption {
+    font-size: 1.2em;
+    font-weight: bold;
+    margin-bottom: 10px;
+}
+
+
+
+
+ /* ------------------------------
+       Footer
+    ------------------------------ */
+    footer {
+        text-align: center;
+        padding: 10px;
+        background-color: #f4f4f4;
+        border-top: 1px solid #ccc;
+    }
+
+/* ------------------------------
+   Footer Navigation
+------------------------------ */
+.footer-nav {
+    display: flex;
+    justify-content: center;
+    list-style: none;
+    padding: 0;
+    gap: 20px; /* Spacing between links */
+}
+
+.footer-nav li {
+    margin: 0;
+}
+
+.footer-nav a {
+    text-decoration: none;
+    color: rgb(221, 94, 20);
+    font-weight: bold;
+    text-transform: uppercase;
+    transition: color 0.3s ease, background 0.3s ease;
+}
+
+.footer-nav a:hover {
+    color: white;
+    background: rgb(221, 94, 20);
+    padding: 5px 10px;
+    border-radius: 5px;
 }
