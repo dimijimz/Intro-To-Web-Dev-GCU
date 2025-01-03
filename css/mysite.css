@@ -183,6 +183,11 @@ footer {
     background-color: #f4f4f4;
     border-top: 1px solid #ccc;
 }
+/* Custom Background Color for Bootstrap Card Header */
+.bg-custom {
+    background-color: #e63946 !important; /* Replace with your desired color */
+    color: #ffffff !important; /* Ensure text is visible on the custom background */
+}
 
 /* ------------------------------
    Full Page Dark Mode
