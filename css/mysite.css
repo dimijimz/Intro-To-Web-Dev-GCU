@@ -4,145 +4,145 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 body {
-        margin-top: 20px;
-        margin-left: 20px;
-        background: rgb(231, 229, 229);
-        font-family: 'Poppins', Arial, sans-serif; /* Updated font */
-        line-height: 1.6; /* Optional for better text spacing */
-    }
-    
-    /* ------------------------------
-       Typography
-    ------------------------------ */
-    .center-text {
-        display: flex;
-        justify-content: center; /* Horizontally center */
-        align-items: center; /* Vertically center */
-        text-align: center; /* Aligns text content */
-        padding: 10px;
-    }
-    
-    
-    h1 {
-        color: #000000;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 32px;
-        margin: 0 0 16px;
-        animation: fadeIn 1.5s ease-in-out;
-    }
-    
-    h2 {
-        color: #4f2fb6;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 28px;
-        margin: 0 0 8px;
-        animation: fadeIn 1.5s ease-in-out;
-    }
-    
-    h3, h4 {
-        color: #000000;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 16px;
-        margin: 0 0 8px;
-        animation: fadeIn 1.5s ease-in-out;
-    }
-    
-    p {
-        font-size: 18px;
-        margin: 16px 0 24px;
-    }
-    
-    li {
-        color: #000000;
-        font-family: Arial;
-        font-weight: bold;
-        font-size: 16px;
-        margin: 0 0 16px;
-    }
-    
-    /* ------------------------------
-       Links
-    ------------------------------ */
-    a {
-        color: rgb(221, 94, 20);
-        background: rgb(231, 229, 229);
-        text-transform: uppercase;
-        text-align: center;
-        text-decoration: none;
-        transition: color 0.3s ease, background-color 0.3s ease;
-    }
-    
-    a:hover {
-        color: white;
-        background: rgb(221, 94, 20);
-    }
-    
-    /* ------------------------------
-       Animations
-    ------------------------------ */
-    @keyframes fadeIn {
-        from {
-            opacity: 0;
-        }
-        to {
-            opacity: 1;
-        }
-    }
-    
-    /* ------------------------------
-       Images
-    ------------------------------ */
-    
-    .rounded-corners {
-        border-radius: 15px;
-    }
-
-    /* Centered Rounded Image */
-    .rounded-image {
-        border-radius: 15px;
-        width: 600px;
-        display: flex;
-        margin: 0 auto 20px;
-        transition: transform 0.3s ease;
+    margin-top: 20px;
+    margin-left: 20px;
+    background: rgb(231, 229, 229);
+    font-family: 'Poppins', Arial, sans-serif; /* Updated font */
+    line-height: 1.6; /* Optional for better text spacing */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
 }
 
-    .rounded-image:hover {
-        transform: scale(1.05);
+/* ------------------------------
+   Typography
+------------------------------ */
+.center-text {
+    display: flex;
+    justify-content: center; /* Horizontally center */
+    align-items: center; /* Vertically center */
+    text-align: center; /* Aligns text content */
+    padding: 10px;
 }
 
-    
-    
-    /* ------------------------------
-       Alignment Fix on Hobbies Page
-    ------------------------------ */
+h1, h2, h3, h4, p, li {
+    transition: color 0.5s ease; /* Smooth transition for text color */
+}
 
-    .hobby {
-        clear: both;
-        margin-bottom: 20px;
-        overflow: auto;
-        gap: 10px; /* Add spacing between text and image */
-        display: flex; /* Use Flexbox for content alignment */
-        align-items: center;
-    }
-    
+h1 {
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 32px;
+    margin: 0 0 16px;
+    animation: fadeIn 1.5s ease-in-out;
+}
 
-    nav ul {
-        list-style-type: none;
-        padding: 0;
-        margin: 0;
-        display: flex;
-        justify-content: center;
-        gap: 20px;
+h2 {
+    color: #4f2fb6;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 28px;
+    margin: 0 0 8px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+h3, h4 {
+    color: #000000;
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 8px;
+    animation: fadeIn 1.5s ease-in-out;
+}
+
+p {
+    font-size: 18px;
+    margin: 16px 0 24px;
+    color: #000000; /* Default color */
+}
+
+li {
+    color: #000000; /* Default color */
+    font-family: Arial;
+    font-weight: bold;
+    font-size: 16px;
+    margin: 0 0 16px;
+}
+
+/* ------------------------------
+   Links
+------------------------------ */
+a {
+    color: rgb(221, 94, 20);
+    background: rgb(0, 0, 0);
+    text-transform: uppercase;
+    text-align: center;
+    text-decoration: none;
+    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+}
+
+a:hover {
+    color: white;
+    background: rgb(221, 94, 20);
+}
+
+/* ------------------------------
+   Animations
+------------------------------ */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
     }
-    nav ul li {
-        display: inline;
+    to {
+        opacity: 1;
     }
-    
-    
-    img {
+}
+
+/* ------------------------------
+   Images
+------------------------------ */
+.rounded-corners {
+    border-radius: 15px;
+}
+
+/* Centered Rounded Image */
+.rounded-image {
+    border-radius: 15px;
+    width: 600px;
+    display: flex;
+    margin: 0 auto 20px;
+    transition: transform 0.3s ease;
+}
+
+.rounded-image:hover {
+    transform: scale(1.05);
+}
+
+/* ------------------------------
+   Alignment Fix on Hobbies Page
+------------------------------ */
+.hobby {
+    clear: both;
+    margin-bottom: 20px;
+    overflow: auto;
+    gap: 10px; /* Add spacing between text and image */
+    display: flex; /* Use Flexbox for content alignment */
+    align-items: center;
+}
+
+nav ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+nav ul li {
+    display: inline;
+}
+
+img {
     border-radius: 15px;
     width: 300px;
     display: block;
@@ -174,85 +174,83 @@ caption {
     margin-bottom: 10px;
 }
 
-
-
-
- /* ------------------------------
-       Footer
-    ------------------------------ */
-    footer {
-        text-align: center;
-        padding: 10px;
-        background-color: #f4f4f4;
-        border-top: 1px solid #ccc;
-    }
+/* ------------------------------
+   Footer
+------------------------------ */
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #f4f4f4;
+    border-top: 1px solid #ccc;
+}
 
 /* ------------------------------
-   Footer Navigation
+   Full Page Dark Mode
 ------------------------------ */
-.footer-nav {
-    display: flex;
-    justify-content: center;
-    list-style: none;
-    padding: 0;
-    gap: 20px; /* Spacing between links */
-}
-
-.footer-nav li {
-    margin: 0;
-}
-
-.footer-nav a {
-    text-decoration: none;
-    color: rgb(221, 94, 20);
-    font-weight: bold;
-    text-transform: uppercase;
-    transition: color 0.3s ease, background 0.3s ease;
-}
-
-.footer-nav a:hover {
-    color: white;
-    background: rgb(221, 94, 20);
-    padding: 5px 10px;
-    border-radius: 5px;
-}
-
-/* Dark Mode Styles */
 .dark-mode {
-    background-color: #121212; /* Dark background */
+    background-color: #121212; /* Dark background for the page */
     color: #ffffff; /* Light text */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+}
+
+.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode p, .dark-mode li {
+    color: #ffffff !important; /* Light text for headings, paragraphs, and lists */
 }
 
 .dark-mode a {
     color: #80d8ff; /* Light blue links */
+    background: transparent; /* No background for links */
 }
 
+.dark-mode a:hover {
+    color: #ffffff; /* White text on hover */
+    background: none; /* No hover background */
+}
+
+/* Navbar in Dark Mode */
+.dark-mode nav {
+    background-color: #121212; /* Match page background */
+    border-bottom: 1px solid #333; /* Optional subtle border */
+}
+
+.dark-mode nav a {
+    color: #ffffff; /* White text for navbar links */
+    background: transparent; /* No background for links */
+}
+
+.dark-mode nav a:hover {
+    color: #80d8ff; /* Light blue on hover */
+}
+
+/* ------------------------------
+   Bootstrap Card in Dark Mode
+------------------------------ */
 .dark-mode .card {
     background-color: #1e1e1e; /* Darker card background */
+    color: #ffffff; /* Light text */
     border-color: #333333; /* Darker border for cards */
 }
 
-.dark-mode .btn-primary {
-    background-color: #007bff; /* Adjusted for better dark mode contrast */
-    border-color: #0056b3;
+.dark-mode .card .card-header {
+    background-color: #2a2a2a; /* Darker header */
+    color: #ffffff; /* White text in header */
 }
 
-.dark-mode .btn-secondary {
-    background-color: #6c757d;
-    border-color: #495057;
+.dark-mode .card .card-body {
+    background-color: #1e1e1e; /* Dark body background */
+    color: #ffffff; /* Light body text */
 }
 
-/* Fix for Navbar Colors */
-.navbar-dark .navbar-nav .nav-link {
-    color: #f8f9fa !important; /* Ensure text is white */
+.dark-mode .card .card-footer {
+    background-color: #2a2a2a; /* Darker footer */
+    color: #ffffff; /* Footer text */
 }
 
-.navbar-dark .navbar-nav .nav-link:hover {
-    color: #80d8ff !important; /* Light blue on hover */
-    background: none !important; /* Remove hover background */
+/* Links inside Bootstrap Cards in Dark Mode */
+.dark-mode .card a {
+    color: #80d8ff; /* Light blue links */
 }
 
-.navbar-dark {
-    background-color: #343a40 !important; /* Dark gray background */
-    border-bottom: 1px solid #222; /* Optional: Add a subtle border for better separation */
+.dark-mode .card a:hover {
+    color: #ffffff; /* White on hover */
 }
