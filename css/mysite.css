@@ -102,6 +102,32 @@ a:hover {
     background-color: #0000008d !important; /* Color for top of bootstrap card */
     color: #ffffff !important; /* Ensure text is visible on the custom background */
 }
+/* "Explore More" Button Styling */
+.btn-primary {
+    background-color: #0000008d; /* Default Bootstrap blue */
+    border-color: #2e2944;
+    color: #ffffff; /* White text */
+    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+}
+
+.btn-primary:hover {
+    background-color: #2e2944; /* Darker blue on hover */
+    border-color: #003f7f;
+    color: #ffffff; /* White text on hover */
+}
+
+/* Explore More Button in Dark Mode */
+.dark-mode .btn-primary {
+    background-color: #2a9d8f; /* Teal for Dark Mode */
+    border-color: #1e7665; /* Darker teal */
+    color: #ffffff; /* White text */
+}
+
+.dark-mode .btn-primary:hover {
+    background-color: #1e7665; /* Darker teal on hover */
+    border-color: #14524a;
+    color: #ffffff; /* White text */
+}
 
 /* ------------------------------
    Images
