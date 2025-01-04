@@ -37,7 +37,7 @@ h1 {
 }
 
 h2 {
-    color: #4f2fb6;
+    color: #2f31b6;
     font-family: Arial;
     font-weight: bold;
     font-size: 28px;
@@ -46,7 +46,7 @@ h2 {
 }
 
 h3, h4 {
-    color: #000000;
+    color: #0000008d;
     font-family: Arial;
     font-weight: bold;
     font-size: 16px;
@@ -57,7 +57,7 @@ h3, h4 {
 p {
     font-size: 18px;
     margin: 16px 0 24px;
-    color: #000000; /* Default color */
+    color: #0000008d; /* Default color */
 }
 
 li {
@@ -72,8 +72,8 @@ li {
    Links
 ------------------------------ */
 a {
-    color: rgb(221, 94, 20);
-    background: rgb(0, 0, 0);
+    color: rgb(20, 27, 221);
+    background: rgba(0, 0, 0, 0.095);
     text-transform: uppercase;
     text-align: center;
     text-decoration: none;
@@ -82,7 +82,7 @@ a {
 
 a:hover {
     color: white;
-    background: rgb(221, 94, 20);
+    background: #8314dd62;
 }
 
 /* ------------------------------
@@ -95,6 +95,12 @@ a:hover {
     to {
         opacity: 1;
     }
+}
+
+/* Custom Background Color for Bootstrap Card Header */
+.bg-custom {
+    background-color: #0000008d !important; /* Color for top of bootstrap card */
+    color: #ffffff !important; /* Ensure text is visible on the custom background */
 }
 
 /* ------------------------------
@@ -183,11 +189,7 @@ footer {
     background-color: #f4f4f4;
     border-top: 1px solid #ccc;
 }
-/* Custom Background Color for Bootstrap Card Header */
-.bg-custom {
-    background-color: #e63946 !important; /* Replace with your desired color */
-    color: #ffffff !important; /* Ensure text is visible on the custom background */
-}
+
 
 /* ------------------------------
    Full Page Dark Mode
