@@ -1,289 +1,342 @@
-/* ------------------------------
+/* --------------------------------------------------
    Global Styles
------------------------------- */
+   -------------------------------------------------- */
+
+/* This imports the Poppins font from Google so we can use it. */
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
+/* This sets default spacing, background, and transitions for the whole page. */
 body {
-    margin-top: 20px;
-    margin-left: 20px;
-    background: rgb(231, 229, 229);
-    font-family: 'Poppins', Arial, sans-serif; /* Updated font */
-    line-height: 1.6; /* Optional for better text spacing */
-    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+    margin-top: 20px;          /* This pushes the page content down from the top. */
+    background: rgb(231, 229, 229); /* This changes the background color to a light gray. */
+    font-family: 'Poppins', Arial, sans-serif; /* This lets us use the Poppins font. */
+    line-height: 1.6;          /* This makes text more spaced out and easier to read. */
+    transition: background-color 0.5s ease, color 0.5s ease; /* This makes background and text color changes smooth. */
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    Typography
------------------------------- */
+   -------------------------------------------------- */
+
+/* This centers text horizontally and vertically. */
 .center-text {
-    display: flex;
-    justify-content: center; /* Horizontally center */
-    align-items: center; /* Vertically center */
-    text-align: center; /* Aligns text content */
-    padding: 10px;
+    display: flex;              /* This lets us use flexbox for centering. */
+    justify-content: center;    /* This horizontally centers the content. */
+    align-items: center;        /* This vertically centers the content. */
+    text-align: center;         /* This centers text inside the container. */
+    padding: 10px;              /* This adds space around the text. */
 }
 
+/* Smooth color transitions for headings and other text. */
 h1, h2, h3, h4, p, li {
-    transition: color 0.5s ease; /* Smooth transition for text color */
+    transition: color 0.5s ease; 
 }
 
+/* This styles the main heading (H1). */
 h1 {
-    color: #000000;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 32px;
-    margin: 0 0 16px;
-    animation: fadeIn 1.5s ease-in-out;
+    color: #000000;                   /* This sets the text color to black. */
+    font-family: Arial;               /* This overrides the font for the main heading. */
+    font-weight: bold;                /* This makes the text bold. */
+    font-size: 32px;                  /* This sets a larger font size for the main heading. */
+    margin: 0 0 16px;                 /* This adds space below the heading. */
+    animation: fadeIn 1.5s ease-in-out; /* This fades in the heading. */
 }
 
+/* This styles the second-level heading (H2). */
 h2 {
-    color: #2f31b6;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 28px;
-    margin: 0 0 8px;
-    animation: fadeIn 1.5s ease-in-out;
+    color: #2f31b6;                   /* This sets the heading color to a dark blue. */
+    font-family: Arial;               /* This uses Arial for the heading. */
+    font-weight: bold;                /* This makes the text bold. */
+    font-size: 28px;                  /* This sets a slightly smaller size than H1. */
+    margin: 0 0 8px;                  /* This adds space below the heading. */
+    animation: fadeIn 1.5s ease-in-out; /* This fades in the heading. */
 }
 
+/* This styles H3 and H4 headings. */
 h3, h4 {
-    color: #0000008d;
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0 0 8px;
-    animation: fadeIn 1.5s ease-in-out;
+    color: #0000008d;                /* This changes their color to a faded black. */
+    font-family: Arial;              /* This uses Arial for the headings. */
+    font-weight: bold;               /* This makes the text bold. */
+    font-size: 16px;                 /* This sets a smaller font size. */
+    margin: 0 0 8px;                 /* This adds space below the heading. */
+    animation: fadeIn 1.5s ease-in-out; /* This fades in the headings. */
 }
 
+/* This styles paragraphs. */
 p {
-    font-size: 18px;
-    margin: 16px 0 24px;
-    color: #0000008d; /* Default color */
+    font-size: 18px;                  /* This sets paragraph text size. */
+    margin: 16px 0 24px;              /* This adds vertical spacing around paragraphs. */
+    color: #0000008d;                 /* This sets the text color to a slightly faded black. */
 }
 
+/* This styles list items. */
 li {
-    color: #000000; /* Default color */
-    font-family: Arial;
-    font-weight: bold;
-    font-size: 16px;
-    margin: 0 0 16px;
+    color: #000000;                   /* This sets the list item text color to black. */
+    font-family: Arial;               /* This uses Arial for list items. */
+    font-weight: bold;                /* This makes list items bold. */
+    font-size: 16px;                  /* This sets a moderate font size. */
+    margin: 0 0 16px;                 /* This adds space between list items. */
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    Links
------------------------------- */
+   -------------------------------------------------- */
+
+/* This styles links and adds transitions. */
 a {
-    color: rgb(20, 27, 221);
-    background: rgba(0, 0, 0, 0.095);
-    text-transform: uppercase;
-    text-align: center;
-    text-decoration: none;
-    transition: color 0.3s ease, background-color 0.3s ease; /* Smooth transitions */
+    color: rgb(20, 27, 221);               /* This sets the link color to a dark blue. */
+    background: rgba(0, 0, 0, 0.095);      /* This adds a faint background. */
+    text-transform: uppercase;             /* This makes the link text uppercase. */
+    text-align: center;                    /* This centers link text if it spans multiple lines. */
+    text-decoration: none;                 /* This removes the underline from links. */
+    transition: color 0.3s ease, background-color 0.3s ease; /* This smooths color transitions. */
 }
 
+/* This changes the link color and background on hover. */
 a:hover {
     color: white;
     background: #8314dd62;
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    Animations
------------------------------- */
+   -------------------------------------------------- */
+
+/* This creates a fadeIn animation effect for headings. */
 @keyframes fadeIn {
     from {
-        opacity: 0;
+        opacity: 0; /* This starts the element as invisible. */
     }
     to {
-        opacity: 1;
+        opacity: 1; /* This makes the element fully visible. */
     }
 }
 
-/* Custom Background Color for Bootstrap Card Header */
+/* --------------------------------------------------
+   Bootstrap Overrides & Custom Classes
+   -------------------------------------------------- */
+
+/* This changes the background and text color of Bootstrap card headers. */
 .bg-custom {
-    background-color: #0000008d !important; /* Color for top of bootstrap card */
-    color: #ffffff !important; /* Ensure text is visible on the custom background */
+    background-color: #0000008d !important; /* This makes the header a semi-transparent black. */
+    color: #ffffff !important;              /* This changes the text to white. */
 }
-/* "Explore More" Button Styling */
+
+/* This styles the "Explore More" button. */
 .btn-primary {
-    background-color: #0000008d; /* Default Bootstrap blue */
-    border-color: #2e2944;
-    color: #ffffff; /* White text */
-    transition: background-color 0.3s ease, color 0.3s ease; /* Smooth transition */
+    background-color: #0000008d;        /* This changes the button background to semi-transparent black. */
+    border-color: #2e2944;             /* This sets the button border color. */
+    color: #ffffff;                    /* This sets the button text to white. */
+    transition: background-color 0.3s ease, color 0.3s ease; /* This makes hover transitions smooth. */
 }
 
+/* This changes the button color on hover. */
 .btn-primary:hover {
-    background-color: #2e2944; /* Darker blue on hover */
-    border-color: #003f7f;
-    color: #ffffff; /* White text on hover */
+    background-color: #2e2944;   /* This darkens the button on hover. */
+    border-color: #003f7f;       /* This sets the new border color on hover. */
+    color: #ffffff;              /* This keeps the text white. */
 }
 
-/* Explore More Button in Dark Mode */
+/* This changes the button styles in Dark Mode. */
 .dark-mode .btn-primary {
-    background-color: #2a9d8f; /* Teal for Dark Mode */
-    border-color: #1e7665; /* Darker teal */
-    color: #ffffff; /* White text */
+    background-color: #2a9d8f;  /* This switches to a teal color. */
+    border-color: #1e7665;      /* This sets a darker teal border. */
+    color: #ffffff;             /* This keeps the text white. */
 }
 
+/* This changes the button color in Dark Mode on hover. */
 .dark-mode .btn-primary:hover {
-    background-color: #1e7665; /* Darker teal on hover */
-    border-color: #14524a;
-    color: #ffffff; /* White text */
+    background-color: #1e7665;  /* This darkens the teal on hover. */
+    border-color: #14524a;      /* This also darkens the border. */
+    color: #ffffff;             /* This keeps the text white. */
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    Images
------------------------------- */
+   -------------------------------------------------- */
+
+/* This rounds the corners of images. */
 .rounded-corners {
-    border-radius: 15px;
+    border-radius: 15px; /* This makes the corners rounded. */
 }
 
-/* Centered Rounded Image */
+/* This styles a large rounded image that scales on hover. */
 .rounded-image {
-    border-radius: 15px;
-    width: 600px;
-    display: flex;
-    margin: 0 auto 20px;
-    transition: transform 0.3s ease;
+    border-radius: 15px;           /* This rounds the image corners. */
+    width: 600px;                  /* This sets the width of the image. */
+    display: flex;                 /* This uses flex so auto margin works nicely. */
+    margin: 0 auto 20px;           /* This centers the image and adds space at the bottom. */
+    transition: transform 0.3s ease; /* This smooths the hover scaling. */
 }
 
+/* This slightly enlarges the image when hovered over. */
 .rounded-image:hover {
     transform: scale(1.05);
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    Alignment Fix on Hobbies Page
------------------------------- */
+   -------------------------------------------------- */
+
+/* This class helps us align text and images neatly for hobbies. */
 .hobby {
-    clear: both;
-    margin-bottom: 20px;
-    overflow: auto;
-    gap: 10px; /* Add spacing between text and image */
-    display: flex; /* Use Flexbox for content alignment */
-    align-items: center;
+    clear: both;                /* This ensures the section doesn't overlap other floated elements. */
+    margin-bottom: 20px;        /* This adds space below each hobby section. */
+    overflow: auto;             /* This contains floated elements if any. */
+    gap: 10px;                  /* This adds space between the text and the image. */
+    display: flex;              /* This uses flex layout for easy alignment. */
+    align-items: center;        /* This centers items vertically in the hobby section. */
 }
 
+/* This styles the navigation list. */
 nav ul {
-    list-style-type: none;
-    padding: 0;
-    margin: 0;
-    display: flex;
-    justify-content: center;
-    gap: 20px;
+    list-style-type: none;      /* This removes default bullet points. */
+    padding: 0;                 /* This removes default padding. */
+    margin: 0;                  /* This removes default margin. */
+    display: flex;              /* This makes the navigation links appear in a row. */
+    justify-content: center;    /* This centers the navigation links horizontally. */
+    gap: 20px;                  /* This adds spacing between the navigation items. */
 }
 
+/* This makes list items display inline in the nav. */
 nav ul li {
-    display: inline;
+    display: inline; 
 }
 
+/* This styles images in general. */
 img {
-    border-radius: 15px;
-    width: 300px;
-    display: block;
-    margin: 20px auto;
+    border-radius: 15px;        /* This rounds the corners of all images. */
+    width: 300px;               /* This sets a default width for images. */
+    display: block;             /* This allows margin auto to center images. */
+    margin: 20px auto;          /* This centers the image and adds space on top and bottom. */
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    Table Styling
------------------------------- */
+   -------------------------------------------------- */
+
+/* This centers the table and makes cells share borders. */
 table {
-    width: 80%;
-    margin: 20px auto;
-    border-collapse: collapse;
+    width: 80%;                 /* This sets the table width to 80% of its container. */
+    margin: 20px auto;          /* This centers the table on the page. */
+    border-collapse: collapse;  /* This merges adjacent cell borders. */
 }
 
+/* This sets the background color for the table header. */
 table thead {
-    background-color: #ffffff;
+    background-color: #ffffff;  /* This makes the header row white. */
 }
 
+/* This styles both table headers (th) and table cells (td). */
 th, td {
-    border: 1px solid #000000;
-    padding: 10px;
-    text-align: center;
+    border: 1px solid #000000;  /* This adds a black border to cells. */
+    padding: 10px;              /* This adds space inside each cell. */
+    text-align: center;         /* This centers text within cells. */
 }
 
+/* This styles the table caption. */
 caption {
-    font-size: 1.2em;
-    font-weight: bold;
-    margin-bottom: 10px;
+    font-size: 1.2em;           /* This makes the caption a bit larger. */
+    font-weight: bold;          /* This makes the caption text bold. */
+    margin-bottom: 10px;        /* This spaces the caption from the table. */
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    Footer
------------------------------- */
+   -------------------------------------------------- */
+
+/* This centers the footer content. */
 footer {
-    text-align: center;
-    padding: 10px;
-    background-color: #f4f4f4;
-    border-top: 1px solid #ccc;
+    text-align: center;         /* This centers the footer text. */
+    padding: 10px;              /* This adds space inside the footer. */
+    border-top: 1px solid #ccc; /* This adds a subtle border at the top. */
 }
 
-
-/* ------------------------------
+/* --------------------------------------------------
    Full Page Dark Mode
------------------------------- */
+   -------------------------------------------------- */
+
+/* This sets a dark background and light text for the entire page. */
 .dark-mode {
-    background-color: #121212; /* Dark background for the page */
-    color: #ffffff; /* Light text */
-    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition */
+    background-color: #121212;  /* This changes the page to a near-black color. */
+    color: #ffffff;             /* This switches text to white for contrast. */
+    transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition into dark mode. */
 }
 
-.dark-mode h1, .dark-mode h2, .dark-mode h3, .dark-mode h4, .dark-mode p, .dark-mode li {
-    color: #ffffff !important; /* Light text for headings, paragraphs, and lists */
+/* This forces headings and text to be white in dark mode. */
+.dark-mode h1, 
+.dark-mode h2, 
+.dark-mode h3, 
+.dark-mode h4, 
+.dark-mode p, 
+.dark-mode li {
+    color: #ffffff !important;  /* This ensures the text is white. */
 }
 
+/* This changes link styles in dark mode. */
 .dark-mode a {
-    color: #80d8ff; /* Light blue links */
-    background: transparent; /* No background for links */
+    color: #80d8ff;             /* This sets links to a light blue. */
+    background: transparent;    /* This removes the link background in dark mode. */
 }
 
+/* This changes link hover in dark mode. */
 .dark-mode a:hover {
-    color: #ffffff; /* White text on hover */
-    background: none; /* No hover background */
+    color: #ffffff;             /* This sets hover state to white. */
+    background: none;           /* This removes background on hover. */
 }
 
-/* Navbar in Dark Mode */
+/* This changes the nav bar in dark mode. */
 .dark-mode nav {
-    background-color: #121212; /* Match page background */
-    border-bottom: 1px solid #333; /* Optional subtle border */
+    background-color: #121212;  /* This blends the nav background with the dark page. */
+    border-bottom: 1px solid #333; /* This adds a subtle border in dark mode. */
 }
 
+/* This sets nav links to white in dark mode. */
 .dark-mode nav a {
-    color: #ffffff; /* White text for navbar links */
-    background: transparent; /* No background for links */
+    color: #ffffff;             /* This ensures nav links are visible. */
+    background: transparent;    /* This removes any background for nav links. */
 }
 
+/* This changes hover states for nav links in dark mode. */
 .dark-mode nav a:hover {
-    color: #80d8ff; /* Light blue on hover */
+    color: #80d8ff;             /* This gives nav links a light blue hover effect. */
 }
 
-/* ------------------------------
+/* --------------------------------------------------
    Bootstrap Card in Dark Mode
------------------------------- */
+   -------------------------------------------------- */
+
+/* This styles the card in dark mode for a consistent dark look. */
 .dark-mode .card {
-    background-color: #1e1e1e; /* Darker card background */
-    color: #ffffff; /* Light text */
-    border-color: #333333; /* Darker border for cards */
+    background-color: #1e1e1e;  /* This gives cards a dark background. */
+    color: #ffffff;             /* This keeps card text white. */
+    border-color: #333333;      /* This darkens the card border. */
 }
 
+/* This darkens the card header. */
 .dark-mode .card .card-header {
-    background-color: #2a2a2a; /* Darker header */
-    color: #ffffff; /* White text in header */
+    background-color: #2a2a2a;  /* This sets a darker shade for the header. */
+    color: #ffffff;             /* This ensures text is visible on the dark header. */
 }
 
+/* This styles the main body of the card. */
 .dark-mode .card .card-body {
-    background-color: #1e1e1e; /* Dark body background */
-    color: #ffffff; /* Light body text */
+    background-color: #1e1e1e;  /* This matches the card body to the overall dark mode. */
+    color: #ffffff;             /* This keeps text white. */
 }
 
+/* This darkens the card footer. */
 .dark-mode .card .card-footer {
-    background-color: #2a2a2a; /* Darker footer */
-    color: #ffffff; /* Footer text */
+    background-color: #2a2a2a;  /* This matches the footer to the dark header. */
+    color: #ffffff;             /* This ensures text is visible on the dark footer. */
 }
 
-/* Links inside Bootstrap Cards in Dark Mode */
+/* This changes link color inside cards in dark mode. */
 .dark-mode .card a {
-    color: #80d8ff; /* Light blue links */
+    color: #80d8ff;             /* This changes links to a light blue. */
 }
 
+/* This changes hover color for links inside cards in dark mode. */
 .dark-mode .card a:hover {
-    color: #ffffff; /* White on hover */
+    color: #ffffff;             /* This switches link text to white on hover. */
 }
