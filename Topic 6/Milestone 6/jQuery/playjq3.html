@@ -4,20 +4,24 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery Activity 3</title>
+
     <!-- Add jQuery from the official CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
+        // Ensure the script runs only after the document is fully loaded
         $(document).ready(function () {
-            // User array
+            // Array of User objects, each containing firstName, lastName, and age properties
             const users = [
                 { firstName: "Dimitri", lastName: "Jimenez", age: 28 },
                 { firstName: "Ava", lastName: "Smith", age: 22 },
                 { firstName: "Xavier", lastName: "Brown", age: 30 }
             ];
 
-            // Function to display users in the table
+            // Function to display all users in the table
             function displayUsers() {
+                // Loop through each user in the array
                 users.forEach(user => {
+                    // Append a new table row for each user
                     $("#userTable tbody").append(`
                         <tr>
                             <td>${user.firstName}</td>
@@ -28,29 +32,36 @@
                 });
             }
 
-            // Button click handler
+            // Button click event handler
             $("#clickMe").click(function () {
+                // Display an alert when the button is clicked
                 alert("I was Clicked!");
             });
 
-            // Call displayUsers() on document ready
+            // Call the displayUsers() function to populate the table on page load
             displayUsers();
         });
     </script>
 </head>
 <body>
+    <!-- Main heading for the page -->
     <h1>jQuery Example 3</h1>
+
+    <!-- Button to demonstrate a click event -->
     <button id="clickMe">Click Me</button>
+
+    <!-- Table to display the users -->
     <table id="userTable" border="1">
         <thead>
             <tr>
+                <!-- Table headers -->
                 <th>First Name</th>
                 <th>Last Name</th>
                 <th>Age</th>
             </tr>
         </thead>
         <tbody>
-            <!-- Data will be added here -->
+            <!-- Data will be dynamically added here by the displayUsers() function -->
         </tbody>
     </table>
 </body>
