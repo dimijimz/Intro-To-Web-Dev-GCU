@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Activity 3</title>
+    <!-- Add jQuery from the official CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        $(document).ready(function () {
+            // User array
+            const users = [
+                { firstName: "Dimitri", lastName: "Jimenez", age: 28 },
+                { firstName: "Ava", lastName: "Smith", age: 22 },
+                { firstName: "Xavier", lastName: "Brown", age: 30 }
+            ];
+
+            // Function to display users in the table
+            function displayUsers() {
+                users.forEach(user => {
+                    $("#userTable tbody").append(`
+                        <tr>
+                            <td>${user.firstName}</td>
+                            <td>${user.lastName}</td>
+                            <td>${user.age}</td>
+                        </tr>
+                    `);
+                });
+            }
+
+            // Button click handler
+            $("#clickMe").click(function () {
+                alert("I was Clicked!");
+            });
+
+            // Call displayUsers() on document ready
+            displayUsers();
+        });
+    </script>
+</head>
+<body>
+    <h1>jQuery Example 3</h1>
+    <button id="clickMe">Click Me</button>
+    <table id="userTable" border="1">
+        <thead>
+            <tr>
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be added here -->
+        </tbody>
+    </table>
+</body>
+</html>
