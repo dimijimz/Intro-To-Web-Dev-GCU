@@ -4,24 +4,28 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>jQuery Activity 1</title>
+
     <!-- Add jQuery from the official CDN -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
     <script>
+        // Ensure the script runs only after the document is fully loaded
         $(document).ready(function () {
             // Write text to the DOM when the page is ready
             $("body").append("<p>Here is my ready to work jQuery page!</p>");
             
             // Define the sayHello() function
             function sayHello() {
+                // Add a new paragraph to the body with a greeting message
                 $("body").append("<p>Hello, jQuery!</p>");
             }
 
-            // Call sayHello() on document ready
+            // Call the sayHello() function when the document is ready
             sayHello();
         });
     </script>
 </head>
 <body>
+    <!-- Main heading for the page -->
     <h1>jQuery Example 1</h1>
 </body>
 </html>
