@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>jQuery Activity 2</title>
+
+    <!-- Add jQuery from the official CDN -->
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script>
+        // Ensure the script runs only after the document is fully loaded
+        $(document).ready(function () {
+            // Define User object with properties: firstName, lastName, and age
+            const User = {
+                firstName: "Dimitri",
+                lastName: "Jimenez",
+                age: 28
+            };
+
+            // Function to display user data in the table
+            function displayUser() {
+                // Use jQuery to add a row to the table's tbody with the user's data
+                $("#userTable tbody").html(`
+                    <tr>
+                        <td>${User.firstName}</td>
+                        <td>${User.lastName}</td>
+                        <td>${User.age}</td>
+                    </tr>
+                `);
+            }
+
+            // Call displayUser() when the document is ready to populate the table
+            displayUser();
+        });
+    </script>
+</head>
+<body>
+    <!-- Main heading for the page -->
+    <h1>jQuery Example 2</h1>
+
+    <!-- Table to display user data -->
+    <table id="userTable" border="1">
+        <thead>
+            <tr>
+                <!-- Table headers -->
+                <th>First Name</th>
+                <th>Last Name</th>
+                <th>Age</th>
+            </tr>
+        </thead>
+        <tbody>
+            <!-- Data will be dynamically added here by the displayUser() function -->
+        </tbody>
+    </table>
+</body>
+</html>

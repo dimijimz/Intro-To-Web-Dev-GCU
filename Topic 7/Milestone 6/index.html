@@ -1,0 +1,169 @@
+<!DOCTYPE html>
+<!-- This specifies that the document is HTML5 -->
+
+<html lang="en">
+<!-- This sets the language of the page to English -->
+<head>
+    <meta charset="UTF-8">
+    <!-- This specifies the character encoding for the webpage as UTF-8 -->
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- This makes the page responsive on different devices -->
+
+    <title>CST-120 Syllabus</title>
+    <!-- This sets the title of the webpage -->
+
+    <!-- Google Font -->
+    <!-- This links the Poppins font from Google Fonts so we can use it in our CSS -->
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    
+    <!-- Bootstrap CSS -->
+    <!-- This includes the Bootstrap framework's CSS from a CDN -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- External CSS -->
+    <!-- This links our custom stylesheet to style the page -->
+    <link rel="stylesheet" type="text/css" href="../../css/mysite.css">
+</head>
+
+<body>
+    <!-- Main heading container -->
+    <!-- This div centers and provides top margin for the title and image -->
+    <div class="container text-center mt-4">
+        <h1>Dimitri's Practice Webpage</h1>
+        <!-- Main heading of the webpage -->
+
+        <img src="../images/coding.jpg" alt="Computer Boolean Code with Snowflakes" class="rounded img-fluid my-3">
+        <!-- Rounded image illustrating coding with a snowflake effect -->
+
+        <p>This is my practice webpage for CST-120!</p>
+        <!-- Introductory paragraph -->
+    </div>
+
+    <!-- Horizontal Rule -->
+    <!-- This visually separates sections of the page -->
+    <hr>
+
+    <!-- Week 1 Content -->
+    <!-- This section describes the first week's content with headings, paragraph, and lists -->
+    <div id="topic1" class="container my-4">
+        <h3>Week 1</h3>
+        <!-- Subheading for Week 1 -->
+
+        <h2>Introduction to Web Development</h2>
+        <!-- Topic title for Week 1 -->
+
+        <p>An overview of the tools and technologies used in web development.</p>
+        <!-- Brief description of the week's focus -->
+
+        <ol>
+            <!-- Ordered list of learning objectives for Week 1 -->
+            <li>Understand the structure of an HTML document.</li>
+            <li>Learn basic HTML tags.</li>
+            <li>Create a simple web page.</li>
+        </ol>
+
+        <h3>Readings</h3>
+        <!-- Subheading for recommended readings -->
+
+        <ul>
+            <!-- Unordered list of reading resources -->
+            <li><a href="https://www.w3schools.com/html/html_intro.asp">HTML Basics</a></li>
+            <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">What is Web Development?</a></li>
+        </ul>
+    </div>
+
+    <!-- Week 2 Content Styled as a Bootstrap Card -->
+    <!-- This section uses Bootstrap card layout to present the second week's content -->
+    <div id="topic2" class="container my-4">
+        <div class="card shadow">
+            <!-- Card container with a shadow effect -->
+
+            <div class="card-header bg-custom text-white">
+                <!-- Card header with custom background (defined in our CSS) -->
+                <h3 class="card-title mb-0">Week 2: Advanced HTML Techniques</h3>
+            </div>
+
+            <div class="card-body">
+                <!-- Main content of the card -->
+                <p class="card-text">Learn advanced HTML tags and their applications:</p>
+                <ol>
+                    <!-- Ordered list of advanced HTML objectives for Week 2 -->
+                    <li>Use semantic HTML tags.</li>
+                    <li>Create accessible web pages.</li>
+                    <li>Implement multimedia in web pages.</li>
+                </ol>
+
+                <h4>Readings</h4>
+                <!-- Subheading for recommended readings -->
+                <ul>
+                    <!-- Unordered list of resources -->
+                    <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML5 Semantic Elements</a></li>
+                    <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility">Accessibility Basics</a></li>
+                </ul>
+            </div>
+            
+            <div class="card-footer d-flex justify-content-between align-items-center">
+                <!-- Card footer with "Dark Mode" button and link -->
+                <button id="darkModeToggle" class="btn btn-secondary">Dark Mode</button>
+                <a href="media.html" class="btn btn-primary">Explore More</a>
+            </div>
+        </div>
+    </div>
+
+    <!-- jQuery Toggle Button for Week 1 -->
+    <!-- This button toggles the visibility of Week 1 content -->
+    <div class="container my-4 text-center">
+        <button id="toggleTopic1" class="btn btn-secondary">Toggle Week 1 Content</button>
+    </div>
+
+    <!-- Footer with Bootstrap Navbar -->
+    <!-- This section contains the site footer and navigation links -->
+    <footer class="bg-dark text-white mt-5">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <!-- Navbar with dark background using Bootstrap classes -->
+            <div class="container">
+                <!-- Container to center navbar content -->
+                <a class="navbar-brand" href="#">Dimitri Jimenez - CST120</a>
+                <!-- Brand/logo link -->
+
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Toggle button for small screens -->
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Collapsible menu items for smaller viewports -->
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Important Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">My Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tando.html">Course Assignment Matrix</a></li>
+                        <li class="nav-item"><a class="nav-link" href="media.html">Video and Audio Media</a></li>
+                    </ul>
+                </div>
+            </div>
+        </nav>
+    </footer>
+
+    <!-- Bootstrap and jQuery Scripts -->
+    <!-- These scripts enable Bootstrap's interactive features and jQuery functionality -->
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    
+    <!-- External JS -->
+    <!-- This links our custom JavaScript file (if we have any) -->
+    <script src="scripts.js"></script>
+
+    <!-- jQuery Toggle Function -->
+    <!-- This script toggles the Week 1 content when the button is clicked -->
+    <script>
+        $(document).ready(function () {
+            $("#toggleTopic1").click(function () {
+                $("#topic1").toggle();
+            });
+        });
+    </script>
+</body>
+</html>
