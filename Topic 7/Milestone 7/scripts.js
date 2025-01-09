@@ -24,3 +24,4 @@ darkModeToggle.addEventListener("click", function () {
         darkModeToggle.textContent = "Dark Mode";
     }
 });
+
