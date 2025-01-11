@@ -4,82 +4,88 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Hobbies</title>
-    <!-- Link to external CSS -->
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Add Bootstrap CSS from the official CDN -->
+
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add Bootstrap JS from the official CDN -->
+
+    <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-    <script src="../js/copyright.js"></script>
+
+    <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="../../css/mysite.css">
+
+    <!-- Custom JavaScript -->
+    <script src="../js/copyright.js"></script>
 </head>
 <body>
+    <!-- Main Content Container -->
     <div class="main-content">
-    <!-- Header -->
-    <div class="container text-center mt-4">
-    <header>
-        <h1 class="center-text">My Hobbies</h1>
+
+        <!-- Header Section -->
+        <div class="container text-center mt-4">
+            <header>
+                <h1 class="center-text">My Hobbies</h1>
+                <hr>
+            </header>
+        </div>
+
+        <!-- Introductory Paragraph -->
+        <p class="center-text">Here are some of the hobbies I enjoy doing in my free time:</p>
+
+        <!-- Hobby 1: Coding -->
+        <div class="center-text">
+            <img src="../images/coding.jpg" alt="Boolean code with snowflakes" class="rounded-image">
+        </div>
+        <div class="center-text">
+            <h2 class="center-text">Coding</h2>
+            <p>I love learning and experimenting with new technologies, building projects, and solving challenging coding problems.</p>
+        </div>
+
+        <!-- Horizontal Rule -->
         <hr>
-    </header>
-    </div>
-    <!-- Intro Paragraph -->
-    <p class="center-text">Here are some of the hobbies I enjoy doing in my free time:</p>
 
-    <!-- Hobby 1 -->
-    <div class="center-text">
-        <img src="../images/coding.jpg" alt="Boolean code with snowflakes" class="rounded-image">
-    </div>
-    <div class="center-text">
-        <h2 class="center-text">Coding</h2>
-    
-        <p>I love learning and experimenting with new technologies, building projects, and solving challenging coding problems.</p>
+        <!-- Hobby 2: Gaming -->
+        <div class="center-text">
+            <img src="../images/gaming.jpg" alt="Gaming Mouse and Keyboard as well as a Controller" class="rounded-image">
+        </div>
+        <div class="center-text">
+            <h2 class="center-text">Gaming</h2>
+            <p>Gaming is a way to unwind and have fun with friends. I particularly enjoy immersive story-driven games.</p>
+        </div>
 
-    </div>
+        <!-- Horizontal Rule -->
+        <hr>
 
-    <!-- Horizontal Rule -->
-    <hr>
+        <!-- Hobby 3: Automotive Enthusiast -->
+        <div class="center-text">
+            <img src="../images/automotive.jpg" alt="Porsche 911 GT3RS in yellow" class="rounded-image">
+        </div>
+        <div class="center-text">
+            <h2 class="center-text">Automotive Enthusiast</h2>
+            <p>I enjoy attending car shows, working on aftermarket upgrades, and exploring the car culture with my family.</p>
+        </div>
 
-    <!-- Hobby 2 -->
-    <div class="center-text">
-        <img src="../images/gaming.jpg" alt="Gaming Mouse and Keyboard as well as a Controller" class="rounded-image">
-    </div>
-    <div class="center-text">
-        <h2 class="center-text">Gaming</h2>
-        <p>Gaming is a way to unwind and have fun with friends. I particularly enjoy immersive story-driven games.</p>
-    </div>
+        <!-- Horizontal Rule -->
+        <hr>
 
-    <!-- Horizontal Rule -->
-    <hr>
-
-    <!-- Hobby 3 -->
-    <div class="center-text">
-        <img src="../images/automotive.jpg" alt="Porsche 911 GT3RS in yellow" class="rounded-image">
-    </div>
-    <div class="center-text">
-        <h2 class="center-text">Automotive Enthusiast</h2>
-        <p>I enjoy attending car shows, working on aftermarket upgrades, and exploring the car culture with my family.</p>
-    </div>
-
-    <!-- Horizontal Rule -->
-    <hr>
-
-    <!-- Add YouTube Video -->
-    <h2 class="center-text">Random Cool Car Video in NYC</h2> 
-
-    <iframe
-        width="692"
-        height="389"
-        class = "rounded-image"
-        src="https://www.youtube-nocookie.com/embed/oqK-NUyhE18"
-        title="Toyota Supra Singleturbo New York Time Square"
-        frameborder="0"
-        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-        allowfullscreen>
-    </iframe>
+        <!-- Video Section -->
+        <h2 class="center-text">Random Cool Car Video in NYC</h2>
+        <iframe
+            width="692"
+            height="389"
+            class="rounded-image"
+            src="https://www.youtube-nocookie.com/embed/oqK-NUyhE18"
+            title="Toyota Supra Singleturbo New York Time Square"
+            frameborder="0"
+            allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
+            allowfullscreen>
+        </iframe>
     </div>
 
-    <!-- Footer with Navigation Links -->
-    <!-- This section contains the site footer and navigation links -->
+    <!-- Footer Section -->
     <footer class="bg-dark text-white mt-5">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -97,14 +103,18 @@
                         <li class="nav-item"><a class="nav-link" href="tando.html">C.A.M</a></li>
                         <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
                         <li class="nav-item">
-                            <button id="darkModeToggle" class="btn btn-secondary">Dark Mode</button>
+                            <button id="darkModeToggle" class="btn btn-secondary nav-link">Dark Mode</button>
                         </li>
                     </ul>
                 </div>
             </div>
         </nav>
     </footer>
-    <div id="copyright"></div>
+
+    <!-- Custom Scripts -->
     <script src="scripts.js"></script>
+
+    <!-- Copyright -->
+    <div id="copyright"></div>
 </body>
 </html>
