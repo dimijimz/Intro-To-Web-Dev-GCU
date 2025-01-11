@@ -5,33 +5,45 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>My Hobbies</title>
     <!-- Link to external CSS -->
-    <link rel="stylesheet" type="text/css" href="../../css/mysite.css">
-    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <!-- Add Bootstrap CSS from the official CDN -->
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Add Bootstrap JS from the official CDN -->
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
     <script src="../js/copyright.js"></script>
+    <link rel="stylesheet" type="text/css" href="../../css/mysite.css">
 </head>
 <body>
+    <div class="main-content">
     <!-- Header -->
+    <div class="container text-center mt-4">
     <header>
         <h1 class="center-text">My Hobbies</h1>
         <hr>
     </header>
-
+    </div>
     <!-- Intro Paragraph -->
     <p class="center-text">Here are some of the hobbies I enjoy doing in my free time:</p>
 
     <!-- Hobby 1 -->
-    <div class="hobby">
+    <div class="center-text">
         <img src="../images/coding.jpg" alt="Boolean code with snowflakes" class="rounded-image">
-        <h2>Coding</h2>
+    </div>
+    <div class="center-text">
+        <h2 class="center-text">Coding</h2>
+    
         <p>I love learning and experimenting with new technologies, building projects, and solving challenging coding problems.</p>
+
     </div>
 
     <!-- Horizontal Rule -->
     <hr>
 
     <!-- Hobby 2 -->
-    <div class="hobby">
+    <div class="center-text">
         <img src="../images/gaming.jpg" alt="Gaming Mouse and Keyboard as well as a Controller" class="rounded-image">
+    </div>
+    <div class="center-text">
         <h2 class="center-text">Gaming</h2>
         <p>Gaming is a way to unwind and have fun with friends. I particularly enjoy immersive story-driven games.</p>
     </div>
@@ -40,8 +52,10 @@
     <hr>
 
     <!-- Hobby 3 -->
-    <div class="hobby">
+    <div class="center-text">
         <img src="../images/automotive.jpg" alt="Porsche 911 GT3RS in yellow" class="rounded-image">
+    </div>
+    <div class="center-text">
         <h2 class="center-text">Automotive Enthusiast</h2>
         <p>I enjoy attending car shows, working on aftermarket upgrades, and exploring the car culture with my family.</p>
     </div>
@@ -62,18 +76,35 @@
         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
         allowfullscreen>
     </iframe>
+    </div>
 
     <!-- Footer with Navigation Links -->
-    <footer>
-        <nav>
-            <ul class="footer-nav">
-                <li><a href="index.html">Home</a></li>
-                <li><a href="events.html">Important Events</a></li>
-                <li><a href="tando.html">Course Assignment Matrix</a></li>
-                <li><a href="media.html">Video and Audio Media</a></li>
-            </ul>
+    <!-- This section contains the site footer and navigation links -->
+    <footer class="bg-dark text-white mt-5">
+        <nav class="navbar navbar-expand-lg navbar-dark">
+            <div class="container">
+                <a class="navbar-brand" href="#">Dimitri Jimenez - CST120</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                        aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav">
+                        <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
+                        <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
+                        <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
+                        <li class="nav-item"><a class="nav-link" href="hobbies.html">Hobbies</a></li>
+                        <li class="nav-item"><a class="nav-link" href="tando.html">C.A.M</a></li>
+                        <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
+                        <li class="nav-item">
+                            <button id="darkModeToggle" class="btn btn-secondary">Dark Mode</button>
+                        </li>
+                    </ul>
+                </div>
+            </div>
         </nav>
     </footer>
     <div id="copyright"></div>
+    <script src="scripts.js"></script>
 </body>
 </html>

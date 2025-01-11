@@ -13,15 +13,22 @@ function resetKey(element) {
 // Dark Mode Toggle
 const darkModeToggle = document.getElementById("darkModeToggle");
 
+// Check localStorage for dark mode preference on page load
+if (localStorage.getItem('darkMode') === 'enabled') {
+    document.body.classList.add('dark-mode'); // Apply dark mode
+    darkModeToggle.textContent = "Light Mode"; // Update button text
+}
+
+// Toggle dark mode and save preference
 darkModeToggle.addEventListener("click", function () {
-    // Toggle a 'dark-mode' class on the body
     document.body.classList.toggle("dark-mode");
 
     // Update button text dynamically
     if (document.body.classList.contains("dark-mode")) {
         darkModeToggle.textContent = "Light Mode";
+        localStorage.setItem('darkMode', 'enabled');
     } else {
         darkModeToggle.textContent = "Dark Mode";
+        localStorage.setItem('darkMode', 'disabled');
     }
 });
-

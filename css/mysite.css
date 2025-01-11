@@ -6,12 +6,19 @@
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap');
 
 /* This sets default spacing, background, and transitions for the whole page. */
-body {
-    margin-top: 20px;          /* This pushes the page content down from the top. */
+html, body {
+    margin-top: 0   px;          /* This pushes the page content down from the top. */
     background: rgb(231, 229, 229); /* This changes the background color to a light gray. */
     font-family: 'Poppins', Arial, sans-serif; /* This lets us use the Poppins font. */
     line-height: 1.6;          /* This makes text more spaced out and easier to read. */
     transition: background-color 0.5s ease, color 0.5s ease; /* This makes background and text color changes smooth. */
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.main-content {
+    flex: 1; /* This makes the main content area take up the remaining space. */
 }
 
 /* --------------------------------------------------
@@ -75,7 +82,8 @@ li {
     font-family: Arial;               /* This uses Arial for list items. */
     font-weight: bold;                /* This makes list items bold. */
     font-size: 16px;                  /* This sets a moderate font size. */
-    margin: 0 0 16px;                 /* This adds space between list items. */
+    margin: 0 16px 0px;
+    justify-content: center;                 /* This adds space between list items. */
 }
 
 /* --------------------------------------------------
@@ -121,6 +129,11 @@ a:hover {
     background-color: #0000008d !important; /* This makes the header a semi-transparent black. */
     color: #ffffff !important;              /* This changes the text to white. */
 }
+/* This centers the content inside a card. */
+.card .btn-center {
+    display: flex; /* Enables Flexbox */
+    justify-content: center; /* Horizontally centers the content */
+}
 
 /* This styles the "Explore More" button. */
 .btn-primary {
@@ -128,6 +141,7 @@ a:hover {
     border-color: #2e2944;             /* This sets the button border color. */
     color: #ffffff;                    /* This sets the button text to white. */
     transition: background-color 0.3s ease, color 0.3s ease; /* This makes hover transitions smooth. */
+
 }
 
 /* This changes the button color on hover. */
@@ -158,6 +172,7 @@ a:hover {
 /* This rounds the corners of images. */
 .rounded-corners {
     border-radius: 15px; /* This makes the corners rounded. */
+    justify-content: center;
 }
 
 /* This styles a large rounded image that scales on hover. */
@@ -189,19 +204,20 @@ a:hover {
 }
 
 /* This styles the navigation list. */
-nav ul {
-    list-style-type: none;      /* This removes default bullet points. */
-    padding: 0;                 /* This removes default padding. */
-    margin: 0;                  /* This removes default margin. */
-    display: flex;              /* This makes the navigation links appear in a row. */
-    justify-content: center;    /* This centers the navigation links horizontally. */
-    gap: 20px;                  /* This adds spacing between the navigation items. */
+.navbar-nav {
+    display: flex;              /* This uses flex layout for the navigation list. */
+    justify-content: center;    /* This centers the navigation list horizontally. */
+    list-style-type: none;      /* This removes the default list style. */
+    padding: 0px;                 /* This removes padding from the list. */
 }
 
-/* This makes list items display inline in the nav. */
-nav ul li {
-    display: inline; 
+.navbar-brand {
+    display: flex;              /* This uses flex layout for the navigation list. */
+    justify-content: center;    /* This centers the navigation list horizontally. */
+    list-style-type: none;      /* This removes the default list style. */
+    padding: 20px;                 /* This removes padding from the list. */
 }
+
 
 /* This styles images in general. */
 img {
@@ -217,9 +233,10 @@ img {
 
 /* This centers the table and makes cells share borders. */
 table {
-    border: 10px solid black;
-    margin: auto;          /* This centers the table on the page. */
-    border-collapse: collapse;  /* This merges adjacent cell borders. */
+    border: 20px solid rgb(16, 15, 15);
+    justify-content: center;          /* This centers the table on the page. */
+    border-collapse: collapse;
+
     
 }
 
@@ -304,7 +321,7 @@ footer {
 
 /* This sets a dark background and light text for the entire page. */
 .dark-mode {
-    background-color: #121212;  /* This changes the page to a near-black color. */
+    background-color: #121212;   /* This changes the page to a near-black color. */
     color: #ffffff;             /* This switches text to white for contrast. */
     transition: background-color 0.5s ease, color 0.5s ease; /* Smooth transition into dark mode. */
 }
