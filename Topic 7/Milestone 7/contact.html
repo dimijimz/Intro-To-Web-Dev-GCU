@@ -4,58 +4,67 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Contact Page</title>
-    <!-- Add jQuery from the official CDN -->
+
+    <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
-    <!-- Add Bootstrap CSS from the official CDN -->
+
+    <!-- Bootstrap CSS -->
     <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <!-- Add Bootstrap JS from the official CDN -->
+
+    <!-- Bootstrap JS -->
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+
+    <!-- External CSS -->
+    <link rel="stylesheet" type="text/css" href="../../css/mysite.css">
+
+    <!-- Custom JS -->
     <script src="../js/copyright.js"></script>
     <script src="scripts.js"></script>
-    <link rel="stylesheet" type="text/css" href="../../css/mysite.css">
 </head>
 <body>
+    <!-- Main Content -->
     <div class="main-content">
-    <!-- Centered Content with Bootstrap Container -->
-    <div class="container mt-5">
-        <h1 class="text-center">Contact Me</h1>
+        <!-- Page Header -->
+        <div class="container mt-5">
+            <h1 class="text-center">Contact Me</h1>
 
+            <!-- Contact Form -->
+            <form method="POST" action="https://postman-echo.com/post">
+                <!-- Professor's Name -->
+                <div class="form-group">
+                    <label for="professorName">Professor's Name:</label>
+                    <input type="text" class="form-control" id="professorName" name="professorName" required>
+                </div>
 
-        <!-- Bootstrap Contact Form -->
-        <form method="POST" action="https://postman-echo.com/post">
-            <!-- Professor's Name -->
-            <div class="form-group">
-                <label for="professorName">Professor's Name:</label>
-                <input type="text" class="form-control" id="professorName" name="professorName" required>
-            </div>
+                <!-- College Name -->
+                <div class="form-group">
+                    <label for="collegeName">Name of the College:</label>
+                    <input type="text" class="form-control" id="collegeName" name="collegeName" required>
+                </div>
 
-            <!-- College Name -->
-            <div class="form-group">
-                <label for="collegeName">Name of the College:</label>
-                <input type="text" class="form-control" id="collegeName" name="collegeName" required>
-            </div>
+                <!-- List of Courses -->
+                <div class="form-group">
+                    <label for="courses">Courses:</label>
+                    <select class="form-control" id="courses" name="courses">
+                        <option value="CST-120">CST-120</option>
+                        <option value="CST-210">CST-210</option>
+                        <option value="CST-310">CST-310</option>
+                    </select>
+                </div>
 
-            <!-- List of Courses -->
-            <div class="form-group">
-                <label for="courses">Courses:</label>
-                <select class="form-control" id="courses" name="courses">
-                    <option value="CST-120">CST-120</option>
-                    <option value="CST-210">CST-210</option>
-                    <option value="CST-310">CST-310</option>
-                </select>
-            </div>
+                <!-- Message Field -->
+                <div class="form-group">
+                    <label for="message">Message:</label>
+                    <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
+                </div>
 
-            <!-- Message Field -->
-            <div class="form-group">
-                <label for="message">Message:</label>
-                <textarea class="form-control" id="message" name="message" rows="5" required></textarea>
-            </div>
-
-            <!-- Submit Button -->
-            <button type="submit" class="btn btn-secondary mb-4">Submit</button>
-        </form>
+                <!-- Submit Button -->
+                <button type="submit" class="btn btn-secondary mb-4">Submit</button>
+            </form>
+        </div>
     </div>
-</div>
+
+    <!-- Footer -->
     <footer class="bg-dark text-white mt-5">
         <nav class="navbar navbar-expand-lg navbar-dark">
             <div class="container">
@@ -80,6 +89,8 @@
             </div>
         </nav>
     </footer>
+
+    <!-- Copyright Section -->
     <div id="copyright"></div>
 </body>
 </html>
