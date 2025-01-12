@@ -1,48 +1,84 @@
 <!DOCTYPE html>
 <html lang="en">
+<!-- The root element for the HTML document, with language set to English -->
+
 <head>
+    <!-- Metadata and resources required for the page -->
+    
     <meta charset="UTF-8">
+    <!-- Specifies the character encoding for the document (UTF-8 for most languages) -->
+
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Ensures the page is responsive and adapts to different screen sizes -->
+
     <title>CST-120 Syllabus</title>
+    <!-- Title of the webpage displayed in the browser tab -->
 
     <!-- Google Font -->
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap" rel="stylesheet">
+    <!-- Links to the Poppins font for custom typography -->
 
     <!-- Bootstrap CSS -->
     <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <!-- Adds Bootstrap framework for responsive design and styling -->
 
     <!-- External CSS -->
     <link rel="stylesheet" type="text/css" href="../../css/mysite.css">
+    <!-- Links to a custom stylesheet for additional styles -->
 
     <!-- jQuery -->
     <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <!-- jQuery library for DOM manipulation and scripting -->
 
     <!-- Copyright JavaScript -->
     <script src="../js/copyright.js"></script>
+    <!-- Custom JavaScript for dynamic copyright content -->
 </head>
+
 <body>
+    <!-- Main body of the webpage -->
+    
     <!-- Page Header -->
     <div class="container text-center mt-4">
+        <!-- Container for centered content with margin-top -->
         <h1>Dimitri's Practice Webpage</h1>
+        <!-- Main heading -->
+        
         <img src="../images/coding.jpg" alt="Computer Boolean Code with Snowflakes" class="rounded img-fluid my-3">
+        <!-- Decorative image with alt text, rounded corners, and responsive sizing -->
+        
         <p>This is my practice webpage for CST-120!</p>
+        <!-- Brief introduction to the webpage -->
     </div>
 
     <!-- Divider -->
     <hr>
+    <!-- Horizontal rule to visually separate sections -->
 
     <!-- Week 1 Content -->
     <div id="topic1" class="container my-4">
+        <!-- Section for Week 1 content -->
         <h3>Week 1</h3>
+        <!-- Subheading for the week -->
+        
         <h2>Introduction to Web Development</h2>
+        <!-- Topic title for Week 1 -->
+
         <p>An overview of the tools and technologies used in web development.</p>
+        <!-- Description of the week's content -->
+
         <ol>
+            <!-- Ordered list of learning objectives -->
             <li>Understand the structure of an HTML document.</li>
             <li>Learn basic HTML tags.</li>
             <li>Create a simple web page.</li>
         </ol>
+
         <h3>Readings</h3>
+        <!-- Subheading for the reading section -->
+
         <ul>
+            <!-- List of recommended resources -->
             <li><a href="https://www.w3schools.com/html/html_intro.asp">HTML Basics</a></li>
             <li><a href="https://developer.mozilla.org/en-US/docs/Learn/HTML/Introduction_to_HTML">What is Web Development?</a></li>
         </ul>
@@ -50,45 +86,68 @@
 
     <!-- Week 2 Content -->
     <div id="topic2" class="container my-4">
+        <!-- Section for Week 2 content styled as a card -->
         <div class="card shadow">
+            <!-- Card with shadow effect -->
+            
             <div class="card-header bg-custom text-white">
+                <!-- Custom-styled card header -->
                 <h3 class="card-title mb-0">Week 2: Advanced HTML Techniques</h3>
             </div>
+
             <div class="card-body">
+                <!-- Content inside the card -->
                 <p class="card-text">Learn advanced HTML tags and their applications:</p>
                 <ol>
+                    <!-- Ordered list of advanced HTML topics -->
                     <li>Use semantic HTML tags.</li>
                     <li>Create accessible web pages.</li>
                     <li>Implement multimedia in web pages.</li>
                 </ol>
+
                 <h4>Readings</h4>
+                <!-- Subheading for additional resources -->
                 <ul>
                     <li><a href="https://www.w3schools.com/html/html5_semantic_elements.asp">HTML5 Semantic Elements</a></li>
                     <li><a href="https://developer.mozilla.org/en-US/docs/Learn/Accessibility/What_is_accessibility">Accessibility Basics</a></li>
                 </ul>
             </div>
+
             <div class="card-footer justify-content-center">
+                <!-- Footer with a centered button -->
                 <a href="media.html" class="btn btn-primary">Explore More</a>
+                <!-- Link to explore more resources -->
             </div>
         </div>
     </div>
 
     <!-- Week 1 Toggle Button -->
     <div class="container my-4 text-center">
+        <!-- Centered container for toggle button -->
         <button id="toggleTopic1" class="btn btn-secondary">Toggle Week 1 Content</button>
+        <!-- Button to toggle the visibility of Week 1 content -->
     </div>
 
-    <!-- Responsive Nav -->
+    <!-- Footer with Navigation -->
     <footer class="bg-dark text-white mt-5">
+        <!-- Dark-themed footer -->
         <nav class="navbar navbar-expand-lg navbar-dark">
+            <!-- Navigation bar inside the footer -->
             <div class="container">
+                <!-- Container for nav content -->
                 <a class="navbar-brand" href="#">Dimitri Jimenez - CST120</a>
+                <!-- Navbar brand -->
+
                 <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
                         aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <!-- Toggle button for smaller screens -->
                     <span class="navbar-toggler-icon"></span>
                 </button>
+
                 <div class="collapse navbar-collapse" id="navbarNav">
+                    <!-- Collapsible navbar links -->
                     <ul class="navbar-nav">
+                        <!-- Navigation links -->
                         <li class="nav-item"><a class="nav-link" href="index.html">Home</a></li>
                         <li class="nav-item"><a class="nav-link" href="contact.html">Contact</a></li>
                         <li class="nav-item"><a class="nav-link" href="events.html">Events</a></li>
@@ -96,6 +155,7 @@
                         <li class="nav-item"><a class="nav-link" href="tando.html">C.A.M</a></li>
                         <li class="nav-item"><a class="nav-link" href="media.html">Media</a></li>
                         <li class="nav-item">
+                            <!-- Dark mode toggle button -->
                             <button id="darkModeToggle" class="btn btn-secondary">Dark Mode</button>
                         </li>
                     </ul>
@@ -106,12 +166,15 @@
 
     <!-- Bootstrap JS -->
     <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- Enables Bootstrap interactive components -->
 
     <!-- Custom JS -->
     <script src="scripts.js"></script>
+    <!-- Links to custom JavaScript for additional functionality -->
 
     <!-- Week 1 Toggle Script -->
     <script>
+        // Toggles the visibility of Week 1 content
         $(document).ready(function () {
             $("#toggleTopic1").click(function () {
                 $("#topic1").toggle();
@@ -121,5 +184,6 @@
 
     <!-- Copyright Section -->
     <div id="copyright"></div>
+    <!-- Placeholder for dynamic copyright content -->
 </body>
 </html>
